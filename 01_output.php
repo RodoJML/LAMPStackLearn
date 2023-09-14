@@ -13,5 +13,9 @@
     // print_r(): single values and arrays
     print_r([1,2,3,4]);
 
-    
+    // var_dump(): returns more info like data type and length
+    var_dump('Hello World');
+
+    // var_export(): Outputs a string representation of a variable
+    var_export('Hello World');
 ?>
