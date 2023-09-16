@@ -10,6 +10,7 @@
         echo 'You can drink juice';
     }
 
+    <br>
 
     $posts = ['any post'];
 
@@ -23,14 +24,15 @@
     // This is a shortcut for if/else statements
     echo $age > 18 ? 'Adult' : 'Minor'; // Adult
 
-
+    <br>
     // Coalesce operator
     // This is a shortcut for if/else statements
     // If the variable is null, it will return the second value
     // If the variable is not null, it will return the variable
     $myName = isset($name) ? $name : 'John Doe';
 
-
+    <br>
+    
     // Switch statement
     // This is a shortcut for if/else statements
     // It is used when you have a lot of conditions
@@ -49,6 +51,6 @@
         default:
             echo 'Your favorite color is something else';
     }
-    
+
 
 ?>
