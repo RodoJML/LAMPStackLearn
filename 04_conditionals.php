@@ -10,7 +10,7 @@
         echo 'You can drink juice';
     };
 
-    "<br>"
+    echo '<br>';
 
     $posts = ['any post'];
 
@@ -20,19 +20,21 @@
         echo 'There are no posts';
     };
 
+    echo '<br>';
+    
     // Ternary operator
     // This is a shortcut for if/else statements
     echo $age > 18 ? 'Adult' : 'Minor'; // Adult
 
-    "<br>"
+    echo '<br>';
+
     // Coalesce operator
     // This is a shortcut for if/else statements
     // If the variable is null, it will return the second value
     // If the variable is not null, it will return the variable
     $myName = isset($name) ? $name : 'John Doe';
-
-    "<br>"
     
+    echo '<br>';
     // Switch statement
     // This is a shortcut for if/else statements
     // It is used when you have a lot of conditions
