@@ -8,7 +8,7 @@
         echo 'You can drink wine';
     } else {
         echo 'You can drink juice';
-    }
+    };
 
     <br>;
 
@@ -18,7 +18,7 @@
         echo 'There are posts';
     } else {
         echo 'There are no posts';
-    }
+    };
 
     // Ternary operator
     // This is a shortcut for if/else statements
@@ -50,7 +50,7 @@
             break;
         default:
             echo 'Your favorite color is something else';
-    }
+    };
 
 
 ?>
