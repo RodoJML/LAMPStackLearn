@@ -39,3 +39,5 @@
         $arr7 = array_merge($arr5, $arr6);
         print_r($arr7); // ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4]
         // If you want to preserve the keys, use the + operator
+
+?>
