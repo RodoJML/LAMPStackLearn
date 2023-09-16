@@ -26,7 +26,6 @@
     // This is a shortcut for if/else statements
     echo $age > 18 ? 'Adult' : 'Minor'; // Adult
 
-    echo '<br>';
 
     // Coalesce operator
     // This is a shortcut for if/else statements
