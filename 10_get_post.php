@@ -1,8 +1,8 @@
 <?php
 
 if(isset($_POST['submit'])){
-    echo $_GET['name'];
-    echo $_GET['age'];
+    echo $_POST['name'];
+    echo $_POST['age'];
 } 
     // In the HTML tages the "name" attribute is used to identify the input
     // this is what is shown in the URL when the form is submitted
@@ -31,6 +31,6 @@ if(isset($_POST['submit'])){
         <input type="text" name="age">
     </div>
 
-    <input type="submit" value="Submit" name="submit">
+    <input type="submit" value="submit" name="submit">
 
 </form>
