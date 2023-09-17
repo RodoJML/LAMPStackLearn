@@ -15,7 +15,7 @@
 
     <div>
         <label for=age> Age: </label>
-        <inout type="text" name="age">
+        <input type="text" name="age">
     </div>
 
     <input type="submit" value="Submit" name="submit">
