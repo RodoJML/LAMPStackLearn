@@ -36,8 +36,42 @@
 
         $arr5 = ['a' => 1, 'b' => 2];
         $arr6 = ['c' => 3, 'd' => 4];
-        $arr7 = array_merge($arr5, $arr6);
-        print_r($arr7); // ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4]
-        // If you want to preserve the keys, use the + operator
+        $arr7 = array_combine($arr5, $arr6);
+        print_r($arr7); // ['a' => 3, 'b' => 4]
+
+        // You can also extract the keys or the values from an array
+        $keys = array_keys($arr7);
+        print_r($keys); // ['a', 'b']
+
+        // You can also swap the keys and the values
+        $values = array_flip($arr7);
+        print_r($values); // [3 => 'a', 4 => 'b']
+
+
+        // You can create a new array giving a range
+        $numbers = range(1, 10);
+        print_r($numbers); // [1,2,3,4,5,6,7,8,9,10]
+
+        // You can also create a new array giving a range with a step
+        $numbers = range(1, 10, 2);
+        print_r($numbers); // [1,3,5,7,9]
+
+        $newNumbers = array_map(function($number) {
+            return "Number ${number}";
+        }, $numbers);
+
+        print_r($newNumbers); // ['Number 1', 'Number 3', 'Number 5', 'Number 7', 'Number 9']
+
+        // You can also filter an array
+        $lessthan10 = 
+                array_filter(
+                    $numbers, 
+                    function($number){return $number < 10;}
+                );
+        
+        print_r($lessthan10); // [1,3,5,7,9]
+
+        
+
 
 ?>
