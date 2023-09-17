@@ -1,9 +1,23 @@
 <?php
 
+// We use the information from the HTML form here
 if(isset($_POST['submit'])){
     echo $_POST['name'];
     echo $_POST['age'];
-} 
+}
+
+// This is the same but with security
+// Post information is stored into a variable
+// and variables are wrapped in the htmlspecialchars() function
+if(isset($_POST['submit'])){
+    $name = htmlspecialchars($_POST['name']);
+    $age = htmlspecialchars($_POST['age']);
+
+    echo $name;
+    echo $age;
+}
+
+
     // In the HTML tages the "name" attribute is used to identify the input
     // this is what is shown in the URL when the form is submitted
 
@@ -14,6 +28,13 @@ if(isset($_POST['submit'])){
     // The information is not cached
     // The information has no length limit
     // The information can be of any type
+
+
+    // For security reasons you should always use POST instead of GET
+    // and wrap the $_POST variables in the htmlspecialchars() function
+    // This will prevent XSS attacks (Cross Site Scripting) 
+    // This will prevent users from injecting malicious code into your website
+    
 ?>
 
 
